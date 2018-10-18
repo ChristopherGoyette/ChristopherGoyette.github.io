@@ -1,0 +1,105 @@
+/*set the background image*/
+body {
+  background-image: url("images/umlBackground.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+}
+
+/*make a grid to put stuff in*/
+#innerds {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.75);
+	grid-template-areas:
+					'header'
+          'navBar'
+          'contents'
+          'footer';
+  min-width: 750px;
+  padding: 2.5%;
+}
+
+/*make the header cool*/
+#header {
+  grid-area: header;
+  background-image: url("images/headerBackground.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+	background-color: white;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+  padding: 1em;
+}
+#header span {
+  color: darkblue;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*next, lets format the links*/
+#navBar {
+  grid-area: navBar;
+}
+#navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  text-align: center;
+  margin-top: 0.25em;
+}
+#navBar li {
+  float: left;
+}
+#navBar li a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+#navBar li a:hover {
+  color: red;
+}
+#navBar li a:active {
+  background-color: lightblue;
+}
+
+/*move the picture to the left and format the text*/
+#rickyBobby {
+  float: left;
+  margin-right: 2em;
+}
+
+/*format the awesome links Ive included in the fotter*/
+/*and make the letters readable against background*/
+#feet {
+  font-size: 80%;
+}
+#feet ul {
+  list-style-type: circle;
+}
+#feet li {
+  color: darkblue;
+}
+#feet li a {
+  text-decoration: none;
+}
+#feet li a:link {
+  color: blue;
+}
+#feet li a:hover {
+  color: red;
+}
+#feet li a:visited {
+  color: orange;
+}
