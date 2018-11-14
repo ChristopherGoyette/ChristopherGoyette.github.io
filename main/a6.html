@@ -1,0 +1,42 @@
+<!--
+Chris Goyette
+christopher_Goyette@student.uml.edu
+-->
+<!--   -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 6</title>
+    <!-- link bootstrap and stylesheet  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/a6.css">
+  </head>
+  <body>
+    <!-- credit: w3 schools  -->
+    <form onsubmit="return false">
+      <label>Start X: </label>
+      <input type="number" name="xstart" id="xstart" value="-10"><br/>
+      <label>End X: </label>
+      <input type="number" name="xend" id="xend" value="10"><br/>
+
+      <label>Start Y: </label>
+      <input type="number" name="ystart" id="ystart" value="-10"><br/>
+      <label>End Y: </label>
+      <input type="number" name="yend" id="yend" value="10"><br/><br/>
+
+      <!-- credit: stackoverflow -->
+      <input type="submit" value="Submit " onclick="return dostuff()">
+    </form>
+
+    <br>
+
+    <!-- spot for the multiplication table -->
+    <div id="multable"></div>
+
+
+    <!-- link javascript  -->
+    <script src="js/a6.js"></script>
+  </body>
+</html>
