@@ -1,0 +1,47 @@
+/*
+Chris Goyette
+christopher_Goyette@student.uml.edu
+*/
+
+/* format the text properly */
+body {
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* make the form not so squished together */
+label {
+  margin: 2em;
+}
+input {
+  margin: 1em;
+}
+
+/* format the table properly */
+table td {
+  color: white;
+  background-color: #3366cc;
+  border: 2px solid #99ccff;
+  margin: 2em;
+  text-align: center;
+  width: 3em;
+}
+
+/* make the operands stand out */
+tr:first-child, td:first-child{
+  font-weight: bold;
+  background-color: #e6e6e6;
+  color: black;
+}
+
+/* format the warning message */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* style the slider */
+#xstartslider, #xendslider, #ystartslider, #yendslider {
+  margin-left: 20%;
+  margin-right: 20%;
+}
