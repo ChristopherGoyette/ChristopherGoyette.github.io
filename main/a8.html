@@ -1,0 +1,83 @@
+<!--
+Chris Goyette
+christopher_Goyette@student.uml.edu
+-->
+<!--   -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 8</title>
+    <!-- link stylesheet  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/a8.css">
+  </head>
+  <body>
+    <!-- credit: w3 schools  -->
+    <form id= "someform">
+      <label>Start X: </label>
+      <input type="number" name="xstart" id="xstart" value = 0>
+      <br>
+      <div id= "xstartslider"></div>
+      <label>End X: </label>
+      <input type="number" name="xend" id="xend" value = 0>
+      <br>
+      <div id= "xendslider"></div>
+
+      <label>Start Y: </label>
+      <input type="number" name="ystart" id="ystart" value = 0>
+      <br>
+      <div id= "ystartslider"></div>
+      <label>End Y: </label>
+      <input type="number" name="yend" id="yend" value = 0>
+      <br>
+      <div id= "yendslider"></div><br>
+
+      <!-- credit: stackoverflow -->
+    <!--  <button type="submit" value="Submit?" onclick="tabulate();">Submit?</button> -->
+    </form>
+    <!-- place to print out warnings -->
+    <br>
+    <div id= "warning"></div>
+    <br>
+
+    <!-- a place for the tabs -->
+    <div id="demoTabs">
+      <ul>
+      </ul>
+    </div>
+      <!-- tab content goes here -->
+  <!--
+      <div id= "tabcontent0"></div>
+      <div id= "tabcontent1"></div>
+      <div id= "tabcontent2"></div>
+      <div id= "tabcontent3"></div>
+      <div id= "tabcontent4"></div>
+  -->
+    <br>
+    <!-- http://www.tutorialspark.com/jqueryUI/jQuery_UI_Tabs_Methods_Adding_Removing_Tabs.php -->
+    <label>Index No of Tab to be Removed (zero based):</label>
+    <input for="indexValue" id="indexValue"><p>
+    <button type="button" id="removeTabs">Remove!</button>
+    <button type="button" id="addTabs">Add a new tab!</button>
+    <br>
+
+    <!-- spot for the multiplication table -->
+    <div id="multable"></div>
+    <br>
+
+    <!-- limk jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- link validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <!-- I am lost to which i do or do not need at this point. PDF says to add the last two so i did -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel= "stylesheet" href= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- link javascript  -->
+    <script src="js/a8.js"></script>
+  </body>
+</html>
