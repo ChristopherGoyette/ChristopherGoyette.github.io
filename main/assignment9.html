@@ -1,0 +1,84 @@
+<!--
+Chris Goyette
+hw 9
+christopher_goyette@student.uml.edu
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/assignment9.css">
+</head>
+<body>
+  <!-- too close to the top of the browser. I could add a margin but this is easier -->
+  <br><br><br><br><br>
+    <!-- place for the gameboard. reference jason downing.io -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center_text_images">
+          <img class="resize_board" id="the_board" src="img/scrabble/Scrabble_Board_OneLine.png">
+          <div id="board"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Place for buttons -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="center_text_images">
+          <button onclick="submit()">Submit Word</button>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+  <br><br>
+
+    <!-- Place for score and word info-->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="labelref">Word: <span id="word">(empty)</span> </div>
+        <div class="labelref">Score: <span id="score">0</span> </div>
+        <div class="labelref">Total Score: <span id="totalscore">0</span> </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- da rack-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center_text_images">
+          <img class="resize_rack" id="the_rack" src="img/scrabble/letterRack.png">
+          <div id="rack"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type='text/javascript' src="js/assignment9.js"></script>
+
+  <script>
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $( document ).ready(function() {
+        init_scrabble_tiles();
+        make_droppable();
+    });
+  </script>
+
+</body>
+</html>

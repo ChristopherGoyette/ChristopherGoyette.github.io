@@ -1,0 +1,69 @@
+/*
+Chris Goyette
+hw 9
+christopher_goyette@student.uml.edu
+*/
+
+html {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+
+.container {
+  padding: 65px 10px 0;
+}
+
+.row {
+  margin: 10px;
+}
+
+/* make stuff centered */
+.center_text_images {
+  margin: auto;
+  text-align: center;
+}
+
+/* make the board a reasonable size */
+.resize_board {
+  height: 125px;
+  width: auto;
+}
+/* make the rack  a reasonable size */
+.resize_rack {
+  height: 125px;
+  width: 1200px;
+}
+/* make the tiles a reasonable size */
+.pieces {
+  height: 100px;
+  width: 100px;
+}
+/* make the droppable areas a reasonable size */
+.droppable {
+  height: 125px;
+  width: 118px;
+}
+
+/* format the button */
+button {
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
+  height: 75px;
+  width: 200px;
+}
+
+.labelref {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+}
